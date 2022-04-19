@@ -1,0 +1,17 @@
+{
+  "name": "testes-cypress",
+  "version": "1.0.0",
+  "description": "testes de instalacao cypress",
+  "main": "index.js",
+  "devDependencies": {
+    "cypress": "^8.2.0"
+  },
+  "scripts": {
+    "test": "cypress run"
+  },
+  "keywords": [
+    "teste"
+  ],
+  "author": "Diogo Borba",
+  "license": "MIT"
+}

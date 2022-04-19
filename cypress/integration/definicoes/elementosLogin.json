@@ -1,0 +1,5 @@
+{
+ "campoUsername": "[data-test=username]",
+ "campoPassword": "[data-test=password]",
+ "botaoLogin": "[data-test=login-button]"
+}
