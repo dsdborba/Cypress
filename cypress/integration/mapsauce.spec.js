@@ -17,25 +17,7 @@ describe('Teste SauceDemo', () => {
         cy.get("[data-test=back-to-products]").click()
         cy.get("#react-burger-menu-btn").click()
         cy.get("#logout_sidebar_link").click()
-        
-         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+               
 
         
     });

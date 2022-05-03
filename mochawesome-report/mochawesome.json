@@ -1,0 +1,104 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-05-02T18:00:26.742Z",
+    "end": "2022-05-02T18:00:29.645Z",
+    "duration": 2903,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "29b0dd27-0642-4c2e-bcaa-197e76f30e4d",
+      "title": "",
+      "fullFile": "cypress/integration/testesAPI.spec.js",
+      "file": "cypress/integration/testesAPI.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "261c9f15-1d5b-4284-810a-770df5504274",
+          "title": "Testes de API",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "POST no viaCep",
+              "fullTitle": "Testes de API POST no viaCep",
+              "timedOut": null,
+              "duration": 2828,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: \"POST\",\n  url: \"https://api-de-tarefas.herokuapp.com/contacts\",\n  body: {\n    \"name\": \"Testes\",\n    \"last_name\": \"API\",\n    \"email\": \"1testesdeapi007@gmail.com\",\n    \"age\": \"28\",\n    \"phone\": \"21984759575\",\n    \"address\": \"Rua Arapongas\",\n    \"state\": \"Minas Gerais\",\n    \"city\": \"Belo Horizonte\"\n  }\n});",
+              "err": {
+                "message": "CypressError: `cy.request()` failed on:\n\nhttps://api-de-tarefas.herokuapp.com/contacts\n\nThe response we received from your web server was:\n\n  > 422: Unprocessable Entity\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: https://api-de-tarefas.herokuapp.com/contacts\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/8.2.0 Chrome/89.0.4328.0 Electron/12.0.0-beta.14 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 177\n}\nBody: {\"name\":\"Testes\",\"last_name\":\"API\",\"email\":\"1testesdeapi007@gmail.com\",\"age\":\"28\",\"phone\":\"21984759575\",\"address\":\"Rua Arapongas\",\"state\":\"Minas Gerais\",\"city\":\"Belo Horizonte\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 422 - Unprocessable Entity\nHeaders: {\n  \"server\": \"Cowboy\",\n  \"date\": \"Mon, 02 May 2022 18:01:23 GMT\",\n  \"connection\": \"keep-alive\",\n  \"content-type\": \"application/json; charset=utf-8\",\n  \"cache-control\": \"no-cache\",\n  \"x-request-id\": \"6cad9522-ef86-49c1-9973-cf2186b3ff7f\",\n  \"x-runtime\": \"0.923162\",\n  \"transfer-encoding\": \"chunked\",\n  \"via\": \"1.1 vegur\"\n}\nBody: {\n  \"errors\": {\n    \"email\": [\n      \"já está em uso\"\n    ]\n  }\n}\n\n\nhttps://on.cypress.io/request",
+                "estack": "CypressError: `cy.request()` failed on:\n\nhttps://api-de-tarefas.herokuapp.com/contacts\n\nThe response we received from your web server was:\n\n  > 422: Unprocessable Entity\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: https://api-de-tarefas.herokuapp.com/contacts\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/8.2.0 Chrome/89.0.4328.0 Electron/12.0.0-beta.14 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 177\n}\nBody: {\"name\":\"Testes\",\"last_name\":\"API\",\"email\":\"1testesdeapi007@gmail.com\",\"age\":\"28\",\"phone\":\"21984759575\",\"address\":\"Rua Arapongas\",\"state\":\"Minas Gerais\",\"city\":\"Belo Horizonte\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 422 - Unprocessable Entity\nHeaders: {\n  \"server\": \"Cowboy\",\n  \"date\": \"Mon, 02 May 2022 18:01:23 GMT\",\n  \"connection\": \"keep-alive\",\n  \"content-type\": \"application/json; charset=utf-8\",\n  \"cache-control\": \"no-cache\",\n  \"x-request-id\": \"6cad9522-ef86-49c1-9973-cf2186b3ff7f\",\n  \"x-runtime\": \"0.923162\",\n  \"transfer-encoding\": \"chunked\",\n  \"via\": \"1.1 vegur\"\n}\nBody: {\n  \"errors\": {\n    \"email\": [\n      \"já está em uso\"\n    ]\n  }\n}\n\n\nhttps://on.cypress.io/request\n    at http://localhost:58807/__cypress/runner/cypress_runner.js:145211:21\n    at tryCatcher (http://localhost:58807/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (http://localhost:58807/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (http://localhost:58807/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (http://localhost:58807/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (http://localhost:58807/__cypress/runner/cypress_runner.js:11329:18)\n    at _drainQueueStep (http://localhost:58807/__cypress/runner/cypress_runner.js:7919:12)\n    at _drainQueue (http://localhost:58807/__cypress/runner/cypress_runner.js:7912:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:58807/__cypress/runner/cypress_runner.js:7928:5)\n    at Async.drainQueues (http://localhost:58807/__cypress/runner/cypress_runner.js:7798:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:58807/__cypress/tests?p=cypress\\integration\\testesAPI.spec.js:104:8)",
+                "diff": null
+              },
+              "uuid": "d7a7345d-169f-431b-bf99-da17d99975fc",
+              "parentUUID": "261c9f15-1d5b-4284-810a-770df5504274",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "d7a7345d-169f-431b-bf99-da17d99975fc"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2828,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
